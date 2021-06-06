@@ -19,7 +19,7 @@ language:    "en" # default language of the blog. Language codes: http://www.w3s
 people:
 - name: Mehrdad Hartmann
   pic: owner
-  position: Co-Founder/Owner
+  position: Founder/Owner
 
 # Postal address (add as many lines as necessary)
 address:
