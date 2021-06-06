@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 host:    "0.0.0.0"
-url:     "https://HighLine.github.io"
+url:     "https://highline.github.io"
 baseurl: ""
 
 # Site settings
