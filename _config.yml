@@ -1,44 +1,25 @@
-host:    0.0.0.0
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-url:     "http://127.0.0.1"
+host:    "0.0.0.0"
+url:     "https://mehrdadh77.github.io"
 baseurl: ""
 
 # Site settings
-title:       "MARKIEE LLC"
-email:       "support@markiee.co"
+title:       "HIGHLINE-UNLTD"
+email:       ""
 description: ""
-
+language:    "en" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
 
 # Team names, titles and social links
 people:
-- name: Ngoc Nguyen
-  pic: ngocnt
-  position: Business Owner
-  social:
-    - title: twitter
-      url: https://twitter.com/NgocNT5/
-    - title: facebook
-      url: https://www.facebook.com/ntt520/
-    - title: linkedin
-      url: https://www.linkedin.com/in/ngoc-nguyen-tan-621962167/
-
-- name: Hoang Nguyen
-  pic: hoangnt
-  position: Co-Founder
-  social:
-    - title: twitter
-      url: https://twitter.com/MarathonZ1/
-    - title: facebook
-      url: https://www.facebook.com/hoangnguyen74/
-    - title: linkedin
-      url: https://www.linkedin.com/in/hoang-nguyen-9040481b3/
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: facebook
-    url: https://www.facebook.com/markiee.company
-  - title: linkedin
-    url: https://www.linkedin.com/company/72009440/
+- name: Mehrdad Hartmann
+  pic: owner
+  position: Co-Founder/Owner
 
 # Postal address (add as many lines as necessary)
 address:
@@ -47,5 +28,24 @@ address:
   - line: USA
 
 # Build settings
+sass:
+  style: compressed
 markdown: kramdown
-permalink: pretty
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+include: ['_pages']
+exclude: [vendor, "developer-tools"]
+plugins:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: [local]
+  blanklines: true
+  startings: [head, body]
